@@ -1,6 +1,6 @@
 {
   "name": "amqp-worker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A job queue backed by AMQP/RabbitMQ",
   "main": "index.js",
   "scripts": {
