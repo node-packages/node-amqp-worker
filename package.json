@@ -1,6 +1,6 @@
 {
   "name": "amqp-worker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A job queue backed by AMQP/RabbitMQ",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/sakai135/node-amqp-worker",
   "dependencies": {
-    "amqplib": "^0.3.0",
-    "async": "^0.9.0"
+    "amqplib": "^0.4.2",
+    "async": "^2.0.1"
   },
   "devDependencies": {
-    "lab": "^5.2.0"
+    "lab": "^11.0.1"
   }
 }
