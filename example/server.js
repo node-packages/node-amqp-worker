@@ -71,6 +71,14 @@ client.on('complete', function(data) {
   console.log('worker completed message');
 });
 
+// listen to client error and try reconnect
+client.on('error', function(err) {
+  if (err) {
+    console.log(err);
+    return client.reconnect();
+  }
+});
+
 // you can add multiple workers to a client
 client.addWorker(worker);
 
@@ -78,7 +86,7 @@ client.addWorker(worker);
 client.connect(function(err) {
   if (err) {
     console.log(err);
-    return process.exit(1);
+    return client.reconnect();
   }
   console.log('client connected to server');
 });
