@@ -42,6 +42,12 @@ var worker = new Worker(
       durable: true
     },
 
+    exchange : {
+      name : 'sample',
+      type : 'topic',
+      routingKey : 'logs'
+    },
+
     // consumer options, same as options on amqplib Channel#consume
     consumer: {
 
